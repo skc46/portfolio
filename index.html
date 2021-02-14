@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+        
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          SHAMBHU KC
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="subtitle">CV/Resume</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/research.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">Research</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/publications.jpg)"></div>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">Publications</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/presentations.jpg)"></div>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">Presentations</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/coding.jpg)"></div>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">Resources</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/gallery.jpg)"></div>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">Gallery</div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    
+  </main>
+
+  
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section-about"></div>
+      <div class="footer-section-links"></div>
+      <div class="footer-section-contact"></div>
+
+    </div>
+    <div class="footer-bottom">
+
+    </div>
+    <!--<div class="footer-content">
+      <p>Contact me</p>
+    <div class="socials">
+      <ul>  
+        <li><a href="#">abcved</a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2021 Shambhu KC</p>
+    </div> -->
+  </footer>
+
+</body>
+
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
