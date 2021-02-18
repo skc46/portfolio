@@ -3,12 +3,14 @@
 
 <head>
   <meta charset='UTF-8'>
-  <title>Portfolio Homepage</title>
+  <title>Shambhu's Website</title>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+  <div class="container">
   <nav>
     <div class="nav-wrapper">
       <div class="left-side">
@@ -34,13 +36,13 @@
     <div class="content-wrapper">
       <div class="portfolio-items-wrapper">
 
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
-
-          <div class="img-text-wrapper">
-            <div class="subtitle">CV/Resume</div>
-          </div>
-        </div>
+        
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/profile_pic.jpg)"></div>
+              <div class="img-text-wrapper">
+                <div class="subtitle">CV/Resume</div>
+              </div>
+           </div>
 
         <div class="portfolio-item-wrapper">
           <div class="portfolio-img-background" style="background-image:url(images/research.jpg)"></div>
@@ -48,19 +50,18 @@
             <div class="subtitle">Research</div>
           </div>
         </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/publications.jpg)"></div>
-          <div class="img-text-wrapper">
-
-            <div class="subtitle">Publications</div>
+        <a href="publications.html">
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/publications.jpg)"></div>
+              <div class="img-text-wrapper">
+                <div class="subtitle">Publications</div>
+              </div>
           </div>
-        </div>
+        </a> 
 
         <div class="portfolio-item-wrapper">
           <div class="portfolio-img-background" style="background-image:url(images/presentations.jpg)"></div>
           <div class="img-text-wrapper">
-
             <div class="subtitle">Presentations</div>
           </div>
         </div>
@@ -68,7 +69,6 @@
         <div class="portfolio-item-wrapper">
           <div class="portfolio-img-background" style="background-image:url(images/coding.jpg)"></div>
           <div class="img-text-wrapper">
-
             <div class="subtitle">Resources</div>
           </div>
         </div>
@@ -76,7 +76,6 @@
         <div class="portfolio-item-wrapper">
           <div class="portfolio-img-background" style="background-image:url(images/gallery.jpg)"></div>
           <div class="img-text-wrapper">
-
             <div class="subtitle">Gallery</div>
           </div>
         </div>
@@ -90,16 +89,21 @@
   
   <footer>
     <div class="footer-content">
-      <div class="footer-section-about"></div>
-      <div class="footer-section-links"></div>
-      <div class="footer-section-contact"></div>
+      <h3>Connect to me</h3>
+      <ul class="links">
+        <li><a href="https://www.facebook.com/shambhu.kc" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter" target="_blank"></i></a></li>
+        <li><a href="mailto:skc@crimson.ua.edu" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCe86OpHOvMYwGHGuRc2bsOQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/shambhu45/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
 
     </div>
     <div class="footer-bottom">
-
+      <p>copyright &copy;2021 Shambhu KC</p>
     </div>
     <!--<div class="footer-content">
-      <p>Contact me</p>
+      
     <div class="socials">
       <ul>  
         <li><a href="#">abcved</a></li>
@@ -110,9 +114,11 @@
       </ul>
     </div>
     <div class="footer-bottom">
-      <p>copyright &copy;2021 Shambhu KC</p>
+      
     </div> -->
   </footer>
+
+  </div>
 
 </body>
 
