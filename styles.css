@@ -31,6 +31,8 @@ footer {
   grid-area: footer;
 }
 
+/* navigation part  */
+
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
@@ -76,6 +78,8 @@ footer {
 .nav-link-wrapper a:hover {
   color: black;
 }
+
+/* main part  */
 
 .content-wrapper {
   min-height: 100%;
@@ -147,7 +151,64 @@ footer {
 
 .profile-content-wrapper h1 {
   color: lightseagreen;
+
 }
+
+/* publication.html  */
+.pub-container {
+  margin: 20px;
+}
+
+
+.pub-container h1{
+  bottom:0px;
+  margin-bottom: 0px;
+  
+}
+
+/*resume.html  */
+
+.resume-head {
+  background-color: rgb(19, 18, 18);
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+}
+
+.resume-content h2{
+  background-color: rgb(194, 188, 188);
+  text-align: center;
+  color:black;
+
+}
+
+.summary-content p{
+  margin: 20px;
+  padding: 5px;
+}
+
+.education-content ul{
+  text-align: justify;
+  margin: 20px;
+
+}
+
+.education-content li{
+  padding: 5px;
+}
+
+
+
+.awards h3{
+  text-align: center;
+}
+
+.experience-content p{
+  margin:20px;
+}
+
 
 /* footer */
 
