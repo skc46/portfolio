@@ -22,7 +22,7 @@ nav {
 }
 
 main {
-  background-color: #e493ae;
+  background-color: rgb(235, 230, 230);
   grid-area:main;
 }
 
@@ -166,6 +166,12 @@ footer {
   
 }
 
+/*research.html */
+
+.research-content {
+  margin: 20px;
+}
+
 /*resume.html  */
 
 .resume-head {
@@ -237,7 +243,7 @@ footer {
 }
 
 .footer-content h3 {
-  font-size: 1.8rem;
+  font-size: 2.0rem;
   font-weight: 400;
   text-transform: capitalize;
   line-height: 0.5rem;
@@ -256,7 +262,7 @@ footer {
   color: #fff;
 }
 .links a i {
-  font-size: 1.1rem;
+  font-size: 2.0rem;
   transition: color .4s ease;
 
 }
@@ -276,6 +282,7 @@ footer .footer-bottom {
   padding-top:10px;
 
 }
+
 /*
 .footer-content{
   display: flex;
