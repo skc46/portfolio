@@ -1,1 +1,1 @@
-web: gunicorn my_portfolio.wsgi
+web: waitress my_portfolio.wsgi
