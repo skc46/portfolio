@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset='UTF-8'>
+  <title>Shambhu's Website</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="container">
+    <nav>
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="nav-link-wrapper active-nav-link">
+            <a href="{% url 'portfolio_app:home' %}">Home</a>     <!-- the "protfolio_app" is the app name defined in urls.py inside app and "home" is name of the url path-->
+          </div>
+  
+          <div class="nav-link-wrapper">
+            <a href="{% url 'portfolio_app:about' %}">About</a>
+          </div>
+          
+        </div>
+  
+        <div class="right-side">
+          <div class="brand">
+            SHAMBHU KC
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <div class="footer-content">
+          <h3>Connect to me</h3>
+          <ul class="links">
+            <li><a href="https://www.facebook.com/shambhu.kc" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/samvu.kc_" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/shambhu_kc46" target="_blank"><i class="fa fa-twitter" target="_blank"></i></a></li>
+            <li><a href="mailto:skc@crimson.ua.edu" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCe86OpHOvMYwGHGuRc2bsOQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/shambhu45/" target="_blank"><i class="fa fa-linkedin-square fa-10x"></i></a></li>
+            <li><a href="https://www.researchgate.net/profile/Shambhu-Kc" target="_blank"><i class="fab fa-researchgate"></i></a></li>
+          </ul>
+    
+        </div>
+        <div class="footer-bottom">
+          <p>copyright &copy;2021 Shambhu KC</p>
+        </div>
+      </footer>
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+  
+    portfolioItems.forEach(portfolioItem => {
+      portfolioItem.addEventListener('mouseover', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.add('image-blur');
+      });
+  
+      portfolioItem.addEventListener('mouseout', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.remove('image-blur');
+      });
+    });
+  
+  </script>
+</html>

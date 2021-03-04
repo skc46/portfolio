@@ -1,0 +1,77 @@
+{% extends "portfolioapp/base.html" %}
+
+{% load static %}
+
+
+{% block content %}
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <a href="{% url 'portfolio_app:resume' %}">
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url('{% static "portfolio/profile_pic.jpg" %}')"></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">Resume</div>
+            </div>
+          </div>
+          </a>
+
+
+        <a href="{% url 'portfolio_app:research' %}">
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url('{% static "portfolio/research.jpg" %}')"></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">Research</div>
+            </div>
+          </div>
+        </a> 
+        
+        
+        <a href="{% url 'portfolio_app:publication' %}">
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url('{% static "portfolio/publications.jpg" %}')"></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">Publications</div>
+            </div>
+          </div>
+        </a> 
+        
+
+        <a href = "{% url 'portfolio_app:presentation' %}">
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url('{% static "portfolio/presentations.jpg" %}')"></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">Presentations</div>
+            </div>
+          </div>
+        </a>
+
+        <a href = "{% url 'portfolio_app:resources' %}">
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url('{% static "portfolio/coding.jpg" %}')"></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">Resources</div>
+            </div>
+          </div>
+        </a>
+        
+  
+        <a href = "{% url 'portfolio_app:gallery' %}">
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url('{% static "portfolio/gallery.jpg" %}')"></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">Gallery</div> 
+            </div>
+          </div>
+        </a>
+        
+
+
+      </div>
+    </div>
+    
+{% endblock %}
+
+  
+  
+

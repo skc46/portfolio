@@ -1,0 +1,128 @@
+{% extends "portfolioapp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class= "research-content">
+    <h1>Research Interest</h1>
+    <p> I'm primarily interested in discovering novel magnetic materials (focusing on Heusler alloys) for spintronic application, especially for memory and storage devices.
+        The material of interest is half-metal, a material with a possibility of exhibiting both metallic and insulating (or semiconducting) behavior in different spin channels.
+        I'm an experimentalist who synthesizes samples and characterizes various properties. However, I also enjoy studying the ground state properties by performing 
+        first principle calcuations. Solving problems by employing statistical methods is what I've always relished. I also like to write code (mainly python) to solve moderate
+        to complex issues. Currently, I am working on solving the issue in material science via machine learning. 
+    </p>
+
+    <P>
+        Throughout my career as a graduate student, I've been involved in several other research projects as well, such as investigating consequences of metal insulator transition
+        in VO<sub>2</sub>, and using antiferromagnetic insulator (i.e., NiO) to measure the spin diffusion length.
+    </P>
+
+    <p>Below, I describe a few selected projects that I've been involved on; the project goal, research methodology, and major accomplishments. </p>
+
+    <h2><b>Project: First-Principles Based Design of Spintronics Materials and Devices (<a href ="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1235396", target="_blank">NSF DMREF # 1235396</a>)</b></h2>
+    <h3><b>Goal</b></h3> 
+    <p>Using first principle calculations (DFT) discover new candidate half-metals and synthesize the candidate half-metals experimentally to test its 
+    phase stability, structural, electrical, magnetic and mechanical characteristics. If the material is promising, employ more advanced techniques (such as fabrication of
+    thin film) to probe dynamic magnetic and spin polarization properties.</p>
+
+    <h3>Research Methodology</h3>
+    <h4>Theoretical</h4>
+    <ul>
+        <li>DFT calculation using VASP</li>
+        <li>Structure relaxation, electronic and magnetic properties</li>
+    </ul>
+
+    <h4>Experimental</h4>
+    <h5>Bulk</h5><hr>
+    <ul>
+        <li>Preparation of bulk ingots by arc melting</li>
+        <li>Post annealing (850 -- 1000&deg;C)</li>
+        <li>Metallography (mechanical grinding and polishing)</li>
+        <li>Microstructure analysis (Optical and Electron Microscopes)</li>
+        <li>Composition analysis (EDS)</li>
+        <li>Structure analysis (XRD, EBSD, TEM)</li>
+        <li>Magnetic measurement (PPMS, VSM)</li>
+        <li>Electronic characteristic (Van der Pauw)</li>
+        <li>Mechanical properties (Vicker's hardness)</li>
+
+    </ul>    
+
+    <h5>Thin films</h5><hr>
+    <ul>
+        <li>Fabrication of thin films (PVD - magnetron sputtering)</li>
+        <li><i>In-situ</i> surface analysis (RHEED, AES)</li>
+        <li>Structure analysis and thickness measurement (XRD, XRR)</li>
+        <li>Magnetization dynamics (FMR measurement)</li>
+
+    </ul>   
+
+    <h3>Notable Achievements</h3>
+    <ul>
+      <li>
+        S. KC, R. Mahat, S. Regmi, A. Mukherjee, P. Padhan, R. Datta, W. H. Butler, A. Gupta, P. LeClair<br>
+        <a href="https://journals.aps.org/prmaterials/abstract/10.1103/PhysRevMaterials.3.114406" target="_blank">Tunable properties and potential half-metallicity in (Co<sub>2-x</sub>Ti<sub>x</sub>)FeGe Heusler alloys: An experimental and theoretical investigation</a><br>
+        Physical Review Materials <strong>3</strong>, 114406 (2019)
+      </li>
+    </ul> 
+    
+    
+    <h2><b>Project: Investigation of spin-pumping and magneto-elastic coupling in ferromagnetic/VO<sub>2</sub> heterostructures (<a href ="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1508680", target="_blank">NSF DMR # 1508680</a>)</b></h2>
+    <h3><b>Goal</b></h3>
+    <p>Vandium dioxide (VO<sub>2</sub>) undergoes ultrafast switching from a low-temperature electrical insulator into a high-temperature electrical conductor accompanied by a 
+       dramatic change in the electrical conductivity. Due this switching behavior, it is an ideal material to make transistors, which is the building block of almost all of the electrical devices.
+       The transition is also responsible for the dramatic change in susceptibility.
+       As a consequence of susceptibility change, enhancement of spin-pumping and a change in magnetic properties are expected upon 
+       crossing the transition temperature of VO<sub>2</sub>.
+    </p> 
+
+    <h3>Research Methodology</h3>
+    <h4>Experimental</h4>
+    <ul>
+        <li>Fabrication of VO<sub>2</sub> thin films (CVD - low pressure)</li>
+        <li>Deposition of ferromagnetic layer (PVD - magnetron sputtering)</li>
+        <li>Thickness and structural analysis (XRD, XRR)</li>
+        <li>Surface roughness analysis (AFM)</li>
+        <li>Resistivity measurements (four probes)</li>
+        <li>Spin-pumping measurement (FMR)</li>
+    </ul> 
+
+    <h3>Notable Achievements</h3>
+    <ul>
+      <li>
+       <b>(Poster-Presenter)</b> Epitaxial Growth and Characterization of VO<sub>2</sub> Thin Films on TiO<sub>2</sub> Substrates<br>
+        MINT Reivew, University of Alabama 2018, Tuscaloosa, AL USA
+      </li>
+    </ul>
+
+
+
+    <h2><b>Project: Spin transport in NiO measured with ferromagnetic resonance</b></h2>
+    <h3><b>Goal</b></h3>
+    <p>As spin current has many adavantages over the charge current, such as no Joule's heating, a better understanding of how the spin current transmits and how it dissipates
+        in a medium is crucial to exploit the full extent of spintronic applications. The study of transmission of spin current in an antiferromangetic (AFM) insulator, such as NiO 
+        is very interesting
+        since the AMF insulator offers zero stary field, and it is robust against external field. The spin currents can be pumped into the AFM from a 
+        ferromagnetic layer so that it propagates through the AFM and depending upon the thickness of AFM layer and its effect can be realized in a non-magnetic layer
+        adjacent to the AFM layer. The aim is to determine the spin diffusion length in NiO, using trilayers of Fe<sub>20</sub>Ni<sub>80</sub>/NiO/Pt with FMR 
+        measurements. The Pt serves as a spin sink when deposited directly on Fe<sub>20</sub>Ni<sub>80</sub> it strongly increases the effective damping parameter. 
+        With NiO between the Pt and Fe<sub>20</sub>Ni<sub>80</sub>, the increase in damping parameter diminishes, and the decay length can be extracted from measurements
+        as a function of NiO thickness.  
+    </p>
+    
+    <h3>Research Methodology</h3>
+    <h4>Experimental</h4>
+    <ul>
+        <li>Fabrication of trilayers of Fe<sub>20</sub>Ni<sub>80</sub>/NiO/Pt (CVD - low pressure)</li>
+        <li>Deposition of ferromagnetic layer (PVD - magnetron sputtering)</li>
+        <li>Thickness and structural analysis (XRD, XRR)</li>
+        <li>Spin-pumping measurement (FMR)</li>
+    </ul> 
+   
+</div>
+
+
+{% endblock %}
+        
+        
+        

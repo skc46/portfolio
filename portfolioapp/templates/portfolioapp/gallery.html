@@ -1,0 +1,26 @@
+{% extends 'portfolioapp\base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+  <div class="image-wrapper">
+    <div class="avs-award">
+        <img src="{% static 'portfolio/avs-presentation.jpg' %}" alt="">
+        <img src="{% static 'portfolio/Falicov-Award.jpg' %}" alt="">
+      </div>
+
+      <div class="APS-2019">
+        <img src="{% static 'portfolio/APS1.JPG' %}" alt="">
+        <img src="{% static 'portfolio/APS2.JPG' %}" alt="">
+        <img src="{% static 'portfolio/APS3.JPG' %}" alt="">
+      </div> 
+
+      <div class="mint-poster">
+        <img src="{% static 'portfolio/mint_poster.jpg' %}" alt="">
+      </div>
+  </div>
+
+  
+{% endblock %}

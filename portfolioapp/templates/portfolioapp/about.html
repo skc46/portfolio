@@ -1,0 +1,71 @@
+{% extends 'portfolioapp/base.html' %}
+
+{% load static %}
+
+
+
+
+{% block content %}
+
+<div class="content-wrapper">   <!-- main body content-->
+  <div class="two-column-wrapper">
+    <div class="profile-image-wrapper">
+        <img src="{% static 'portfolio/about-image2.jpg' %}" alt="">
+    </div>
+
+    <div class="profile-content-wrapper">
+      <h1>Hi, thanks for visiting my site.</h1>
+      <p>Shambhu KC is a result-oriented and motivated doctoral student in experimental Condensed Matter Physics at the University of Alabama. He is currently working under the guidance of
+        Dr. Patrick LeClair, and Dr. Arunava Gupta. He recieved B.Sc. in Physics, Statistics, 
+        and Mathematics in 2010 from Tribhuvan University, Nepal. Then he recieved M.Sc. in Physics in 2013 from Tribhuvan University, Nepal, where he worked under the supervision of Dr. Binil Aryal
+        to complete his Master's thesis, titled <b>Interaction Between Ambient ISM and AGB Starts at Lattitude -1&deg</b>. He also obtained his second M.Sc. in experimental Condensded Matter Physics from the 
+        University of Alabama in 2019. </p>
+
+        <p>Shambhu's main research is focused on the discovery of novel half-metallic Heusler compounds for potential spintronic applications. He excels in sample preparation, characterization,
+          and high throughput data analysis. Besides the research activites, Shambhu enjoys learning and trying new skills, exploring new advancemnts made in the electronic device components. He has recieved Outstanding Graduate Student Research by a Doctoral Student Award in 2020
+          from the department of Physics and Astronomy, and
+          in the same year he also received Graduate Council Fellowship from the Graduate School of the University of Alabama.
+        </p>
+        
+        <p>
+          Shambhu is afiliated with American Physical Society (APS), American Vacuum Society (AVS), and IEEE Magnetics Society. He is also an acting Condensed Matter Experiment Liaison
+          in Physics Astronomy Graduate Student Association (PAGSA) of University of Alabama.
+        </p><hr>
+
+        <p>
+          If you have any suggestions or questions for Shambhu please connect to him via any of the social sites listed at the bottom. You can also send direct message by using the form below.
+        </p>
+
+       <!-- <div class="form-container">
+          <form class="form-control" method = "post"> {% csrf_token %}
+            <div class="form-group">
+              <label for="fname">Your Name</label>
+              <input name ='name' type="text" id="fname" class="form-control" placeholder="Enter your name [Optional]"/>
+
+              <label for="exampleInputEmail">Your email</label>
+              <input name = 'email' type="text" class="form-control" id="exampleInputEmail" placeholder="example@email.com [optional]"/>
+
+              <label for="typemessage">Message</label>
+              <textarea name = 'message' class="form-textarea" id='typemessage' placeholder="Type your message here..."></textarea>
+
+            </div>
+            <input type = "submit" value="Send"/>
+          </form>
+        </div>   -->
+        <form class = "form-control" method='POST'> {% csrf_token %}
+           {{form.as_p}}               <!-- get the form instances as paragraphs-->
+
+         
+          <input type='submit' value='send' />
+        </form>
+
+    </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+
+   
+

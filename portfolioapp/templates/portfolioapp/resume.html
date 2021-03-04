@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="resume-head">
-        <h1>Shambhu KC</h1>
-    </div>
+{% extends "portfolioapp/base.html" %}
 
+{% load static %}
+
+    
+    
+{% block content %}     
     <div class="resume-content">
         <div class="summary-content">
            <h2>SUMMARY</h2>
@@ -109,6 +102,6 @@
           </div>
 
     </div>
+
+{% endblock %}    
     
-</body>
-</html>
