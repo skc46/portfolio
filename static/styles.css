@@ -351,7 +351,7 @@ input:hover {
 .image-wrapper {
   display:flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 figure {
@@ -394,22 +394,19 @@ figure:hover figcaption {
   grid-template-columns: 50% 50%;
 }
 
-
 .avs-award img{
   top: 10px;
-  width: 700px;
+  width: 600px;
   height: auto;
 }
 
 .APS-2019 {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  size: 10px;
 }
 
 .APS-2019 img{
-  max-width: 700px;
+  max-width: 500px; 
   height: auto;
   gap: 0.5 rem;
 }
