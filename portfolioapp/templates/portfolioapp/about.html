@@ -55,9 +55,27 @@
         <form class = "form-control" method='POST'> {% csrf_token %}
            {{form.as_p}}               <!-- get the form instances as paragraphs-->
 
-         
           <input type='submit' value='send' />
         </form>
+
+        <div class="avs">
+          <figure class="avs-award"><a href="#">
+             <img  src="{% static 'portfolio/avs-presentation.jpg' %}" />
+           
+          </a> 
+           <figcaption>Presenting my work on Co<sub>1.5</sub>Ti<sub>0.5</sub>FeGe thin-films at AVS 66th International 
+             Symposium & Exhibition 2019, Columbus, OH USA </figcaption>
+           </figure>
+ 
+           <figure class="avs-award"><a href="#">
+             <img src="{% static 'portfolio/Falicov-Award.jpg' %}" width="300" height=auto />
+             </a>
+             <figcaption>Leo Falicov-Award Ceremony at AVS 66th International 
+                 Symposium & Exhibition 2019, Columbus, OH USA<a href ="https://avs.org/awards/division-group-student-awards/magnetic-interfaces-nanostructures-division-the-le/">[source]</a> </figcaption>
+           </figure>
+ 
+         </div>
+         
 
     </div>
     </div>
