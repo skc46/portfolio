@@ -50,4 +50,4 @@ def resource(request):
     return render(request, 'portfolioapp/coding.html', {})  
 
 def gallery(request):
-    return render(request, 'portfolioapp/base.html', {})       
+    return render(request, 'portfolioapp/gallery.html', {})       
