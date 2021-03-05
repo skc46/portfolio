@@ -7,29 +7,51 @@ body {
   height: 100vh;
 }
 
-body {
+/* body {
   display:grid;
   grid-gap:0px;
   grid-template-columns:1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:"nav" "main" "footer";
 
+} */
+
+#nav, #main, #footer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  background: #ccc;
 }
 
-nav {
+#nav{
+  height: 100px;
+  top: 0;
+}
+
+#main{
+  top: 100px;
+  bottom: 100px;
+  background: #DBEAF9;
+}
+
+#footer{
+  height:100px;
+  bottom: 0;
+}
+/* nav {
   background-color: #7E57C2;
   grid-area:nav;
 }
 
 main {
   /*background-color: rgb(235, 230, 230); */
-  grid-area:main;
+  /* grid-area:main;
 }
 
 footer {
   background-color: crimson;
   grid-area: footer;
-}
+} */ 
 
 /* navigation part  */
 
@@ -362,6 +384,7 @@ input:hover {
 /* footer */
 
 footer {
+  position: absolute;
   background:crimson;
   width: 100%;
   padding-top: 0px;
