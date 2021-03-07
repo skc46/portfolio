@@ -53,11 +53,13 @@
             <input type = "submit" value="Send"/>
           </form>
         </div>   -->
-        <form class = "form-control" method='POST'> {% csrf_token %}
-           {{form.as_p}}               <!-- get the form instances as paragraphs-->
+       <div class = "mb-3">
+         <form method='POST'> {% csrf_token %}
+            {{form.as_p}}               <!-- get the form instances as paragraphs-->
 
-          <input type='submit' value='send' />
-        </form>        
+            <input type='submit' value='send' />
+        </form> 
+      </div>       
     </div>
   </div>
 </div>
