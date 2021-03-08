@@ -151,4 +151,19 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR
 
+# myaccount.google.com/lesssecureapps
+# myaccount.google.com/apppasswords
+
+
+# Email setting
+EMAIL_HOST = 'stmp.gmail.com'  # for google chnage it to 'smtp.gmail.com'
+EMAIL_PORT='587'         # change this to '587'
+EMAIL_HOST_USER='pooja.kc3062@gmail.com'
+EMAIL_HOST_PASSWORD=config('EMAIL_HOST_PASSWORD')
+EMAIL_USE_TLS=True
+#EMAIL_USE_SSL=
+
+
+
 django_heroku.settings(locals())
+

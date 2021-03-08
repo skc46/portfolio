@@ -197,6 +197,11 @@ footer {
 
 /* form_control  */
 
+.form-group{
+  display: flex;
+  flex-direction: column;
+}
+
 .mb-3 {
   display: grid;
   grid-template-columns: 1fr;
@@ -225,7 +230,7 @@ id_Name {
   width: 400px;
   height: 200px;
   border-radius: 10px;
-  margin: 10px;
+  margin: 50px;
   font-size: 1rem;
   
 }
@@ -237,12 +242,23 @@ id_Name {
 input[type=submit] {
   margin: 20px;
   border-radius: 5px;
-  background-color: blue;
+  size: 100px;
+  background-color:blue;
+  color: white;
+  font-size: 16px;
 }
 
-input:hover {
-  color:rgb(20, 7, 199);
+.button:hover {
+  color:white;
+  size: 100px;
+
 }
+
+.thanks-note h3{
+  color: blue;
+}
+  
+
 
 
 
@@ -302,10 +318,6 @@ input:hover {
 }
 
 /*coding.html */
-
-.presentation-wrapper{
-  min-height: 100vh;
-}
 
 
 
