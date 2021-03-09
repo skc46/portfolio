@@ -45,9 +45,9 @@ INSTALLED_APPS = [
     'portfolioapp.apps.PortfolioappConfig',
 ]
 
-# SESSION_COOKIE_SECURE = True
-# CSRF_COOKIE_SECURE = True
-# SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = True
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -86,23 +86,23 @@ WSGI_APPLICATION = 'my_portfolio.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 # """Commented for development purpose"""
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('DB_NAME'),
-        'USER' : config('DB_USER'),
-        'PASSWORD': config('DB_PASSWORD'),
-        'HOST': config('DB_HOST'),
-        'PORT': '5432',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': config('DB_NAME'),
+#         'USER' : config('DB_USER'),
+#         'PASSWORD': config('DB_PASSWORD'),
+#         'HOST': config('DB_HOST'),
+#         'PORT': '5432',
+#     }
+# }
 
 """Comment this while working locally"""
-# DATABASES = {
-#     'default': dj_database_url.config(
-#         default=config('DATABASE_URL')
-#     )
-# }
+DATABASES = {
+    'default': dj_database_url.config(
+        default=config('DATABASE_URL')
+    )
+}
 
 
 # Password validation
@@ -157,11 +157,11 @@ MEDIA_ROOT = BASE_DIR
 
 # Email setting
 #MAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'localhost'  # for google chnage it to 'smtp.gmail.com'
-EMAIL_PORT=1025       # change this to '587' for localhost 1025
+EMAIL_HOST = 'smtp.gmail.com'  # for google chnage it to 'smtp.gmail.com'
+EMAIL_PORT=587      # change this to '587' for localhost 1025
 EMAIL_HOST_USER='pooja.kc3062@gmail.com'
 EMAIL_HOST_PASSWORD=config('EMAIL_HOST_PASSWORD')
-EMAIL_USE_TLS=False
+EMAIL_USE_TLS=True
 #EMAIL_USE_SSL=True
 DEFAUL_FROM_EMAIL='default from email'
 

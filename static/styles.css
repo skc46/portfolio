@@ -319,7 +319,9 @@ input[type=submit] {
 
 /*coding.html */
 
-
+.coding-wrapper {
+  margin: 20px;
+}
 
 
 /*resume.html  */
