@@ -33,12 +33,12 @@ def homepage(request):
 def about(request):
     form = MessageForm(request.POST or None)
     if form.is_valid():
-        form.save()
-        form = MessageForm()
         name = request.POST['Name']
         email = request.POST['Email']
         message = request.POST['Message']
-        
+        form.save()
+        form = MessageForm()
+        return render(request, 'portfolioapp/about.html', {'name':name})
         # send email
         send_mail(
             name,
@@ -46,7 +46,7 @@ def about(request):
             message,
             ['pooja.kc3062@gmail.com'],
            )
-        return render(request, 'portfolioapp/about.html', {'name':name})
+        
 
     else:    
 
