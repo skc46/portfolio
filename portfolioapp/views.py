@@ -37,7 +37,7 @@ def about(request):
         form = MessageForm()
         name = request.POST['Name']
         email = request.POST['Email']
-        message = request.POSt['Message']
+        message = request.POST['Message']
         
         # send email
         send_mail(
