@@ -36,7 +36,9 @@ def about(request):
         form.save()
         form = MessageForm()
         name = request.POST['Name']
-        return render(request, 'portfolioapp/about.html', {'name':name})
+        email = request.POST['Email']
+        message = request.POSt['Message']
+        
         # send email
         send_mail(
             name,
@@ -44,6 +46,7 @@ def about(request):
             message,
             ['pooja.kc3062@gmail.com'],
            )
+        return render(request, 'portfolioapp/about.html', {'name':name})
 
     else:    
 

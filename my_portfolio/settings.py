@@ -162,7 +162,8 @@ EMAIL_PORT=587         # change this to '587'
 EMAIL_HOST_USER='pooja.kc3062@gmail.com'
 EMAIL_HOST_PASSWORD=config('EMAIL_HOST_PASSWORD')
 EMAIL_USE_TLS=True
-#EMAIL_USE_SSL=
+#EMAIL_USE_SSL=True
+DEFAUL_FROM_EMAIL='default from email'
 
 
 
