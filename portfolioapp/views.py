@@ -38,15 +38,14 @@ def about(request):
         message = request.POST['Message']
         form.save()
         form = MessageForm()
-        return render(request, 'portfolioapp/about.html', {'name':name})
-        # send email
         send_mail(
             name,
             email,
             message,
             ['pooja.kc3062@gmail.com'],
            )
-        
+        return render(request, 'portfolioapp/about.html', {'name':name})
+        # send email
 
     else:    
 
