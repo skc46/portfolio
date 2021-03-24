@@ -165,6 +165,8 @@ EMAIL_USE_TLS=True
 #EMAIL_USE_SSL=True
 DEFAUL_FROM_EMAIL='default from email'
 
+GOOGLE_RECAPTCHA_SECRET_KEY = config('RECAPTCHA_SECRET_KEY')
+
 
 
 django_heroku.settings(locals())
