@@ -280,7 +280,7 @@ input[type=submit] {
 }
 
 .pub-container li:nth-child(odd) {
-  background:rgb(214, 213, 213);
+  background:rgb(241, 133, 133);
 }
 
 /* presentation.html*/
@@ -290,7 +290,7 @@ input[type=submit] {
 }
 
 .presen-container div:nth-child(odd) {
-  background:rgb(187, 185, 185);
+  background:rgb(243, 144, 144);
 }
 
 /*research.html */
@@ -319,7 +319,13 @@ input[type=submit] {
 
 /*coding.html */
 
+.coding-wrapper {
+  margin: 10px;
+}
 
+.coding-wrapper li{
+  margin: 20px;
+}
 
 
 /*resume.html  */

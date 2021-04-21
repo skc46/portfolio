@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from .models import ContactForm
 from .forms import MessageForm
 from django.http import HttpResponse
+from django.contrib import messages
 from django.core.mail import send_mail
 
 # Create your views here.
@@ -38,15 +39,15 @@ def about(request):
         message = request.POST['Message']
         form.save()
         form = MessageForm()
-        return render(request, 'portfolioapp/about.html', {'name':name})
-        # send email
         send_mail(
             name,
+            message +' '+ 'sent by' +" "+ email,
             email,
-            message,
-            ['pooja.kc3062@gmail.com'],
+            ['pooja.kc3062@gmail.com']
            )
-        
+        #messages.success(request, ("Email sent successfully"))   
+        return render(request, 'portfolioapp/about.html', {'name':name})
+        # send email
 
     else:    
 

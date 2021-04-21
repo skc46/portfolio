@@ -1,27 +1,28 @@
-html, body {
+html {
   font-family: "Lato", sans-serif;
   margin: 0px;
+  height: 100%;
 }
 
-body {
-  height: 100vh;
-}
 
 body {
+  margin:0;
+  min-height: 100%;
   display:flex;
   flex-direction: column;
+ 
   /* grid-template-columns:1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:"nav" "main" "footer"; */
 
 }
 
-#nav, #main, #footer {
+/* #nav, #main, #footer {
   position: absolute;
   right: 0;
   left: 0;
   background: #ccc;
-}
+} */
 
 #nav{
   height: 100px;
@@ -196,7 +197,12 @@ footer {
 
 /* form_control  */
 
-.form-group {
+.form-group{
+  display: flex;
+  flex-direction: column;
+}
+
+.mb-3 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
@@ -213,7 +219,7 @@ id_Name {
   border-radius: 10px;
 }
 }
-.form-control p{
+.form-label{
   padding:10px;
   margin: 5px 0;
   border-radius: 10px;
@@ -224,7 +230,7 @@ id_Name {
   width: 400px;
   height: 200px;
   border-radius: 10px;
-  margin: 10px;
+  margin: 50px;
   font-size: 1rem;
   
 }
@@ -236,11 +242,23 @@ id_Name {
 input[type=submit] {
   margin: 20px;
   border-radius: 5px;
+  size: 100px;
+  background-color:blue;
+  color: white;
+  font-size: 16px;
 }
 
-input:hover {
-  color:grey;
+.button:hover {
+  color:white;
+  size: 100px;
+
 }
+
+.thanks-note h3{
+  color: blue;
+}
+  
+
 
 
 
@@ -299,7 +317,11 @@ input:hover {
   font-size: 18px;
 }
 
+/*coding.html */
 
+.coding-wrapper {
+  margin: 20px;
+}
 
 
 /*resume.html  */
@@ -351,7 +373,7 @@ input:hover {
 .image-wrapper {
   display:flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 figure {
@@ -394,22 +416,19 @@ figure:hover figcaption {
   grid-template-columns: 50% 50%;
 }
 
-
 .avs-award img{
   top: 10px;
-  width: 700px;
+  width: 600px;
   height: auto;
 }
 
 .APS-2019 {
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  size: 10px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .APS-2019 img{
-  max-width: 700px;
+  max-width: 500px; 
   height: auto;
   gap: 0.5 rem;
 }
@@ -426,7 +445,8 @@ footer {
   width: 100%;
   padding-top: 0px;
   font-family: "Open Sans";
-  bottom: 0px;
+
+  margin-top: auto;
 }
 
 .footer-content {
